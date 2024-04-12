@@ -12,6 +12,7 @@
     "build": "parcel build manifest.json --config @parcel/config-webextension"
   },
   "dependencies": {
+    "@oddbird/popover-polyfill": "^0.4.1",
     "@primer/react": "^36.13.0",
     "octokit": "^3.2.0",
     "react": "^18.2.0",
@@ -22,5 +23,8 @@
   "version": "0.0.0",
   "author": "salman <slmkhanahmed@gmail.com>",
   "license": "ISC",
-  "description": "github extension"
+  "description": "github extension",
+  "@parcel/resolver-default": {
+    "packageExports": true
+  }
 }
