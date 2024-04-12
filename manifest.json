@@ -7,8 +7,10 @@
   "background": {
     "scripts": ["./background.ts"]
   },
+  
   "permissions": [
     "tabs",
+    "https://github.com/*",
     "activeTab"
   ],
   "browser_action": {
