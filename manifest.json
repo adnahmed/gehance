@@ -1,11 +1,22 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2 ,
   "version": "1.0",
 
   "name": "gehance",
   "description": "An extension template using React and TypeScript. This template includes a content script using Tailwind.css. To see it in action, visit https://docs.extensioncreate.com.",
   "background": {
-    "service_worker": "./background.ts"
+    "scripts": ["./background.ts"]
+  },
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icon/icon_16.png",
+      "48": "icon/icon_48.png"
+    }
   },
   "content_scripts": [
     {
@@ -21,4 +32,5 @@
     "16": "icon/icon_16.png",
     "48": "icon/icon_48.png"
   }
+  
 }
